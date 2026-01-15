@@ -55,8 +55,8 @@ endif
 QEMU = qemu-system-riscv64
 MIN_QEMU_VERSION = 7.2
 
-CC = $(TOOLPREFIX)gcc
-AS = $(TOOLPREFIX)gas
+CC = $(TOOLPREFIX)gcc-14
+AS = $(TOOLPREFIX)gas-14
 LD = $(TOOLPREFIX)ld
 OBJCOPY = $(TOOLPREFIX)objcopy
 OBJDUMP = $(TOOLPREFIX)objdump
