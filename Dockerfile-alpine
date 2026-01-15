@@ -1,0 +1,10 @@
+FROM alpine:3.23.2
+
+RUN apk add --no-cache binutils-riscv-none-elf gcc-riscv-none-elf qemu-system-riscv64 gdb-multiarch bc make gcc bash
+
+WORKDIR /xv6-riscv
+
+COPY . .
+COPY Makefile-alpine Makefile
+
+CMD ["/bin/bash"]
